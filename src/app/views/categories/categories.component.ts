@@ -18,8 +18,7 @@ export class CategoriesComponent implements OnInit {
   }
 
   showTasksByCategory(category): void {
-    const tasks = this.dataHandler.getTasksByCategory(category);
-    console.log(tasks);
+    this.dataHandler.fillTasksByCategory(category);
   }
 
 }
