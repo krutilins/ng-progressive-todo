@@ -37,15 +37,13 @@ export class TestData {
       title: 'Почистить зубы',
       priority: TestData.priorities[1],
       completed: false,
-      category: TestData.categories[8],
-      date: new Date('2020-01-16')
+      category: TestData.categories[8]
     },
     {
       id: 3,
       title: 'Сверстать один блок html',
       priority: TestData.priorities[4],
       completed: false,
-      category: TestData.categories[0],
       date: new Date('2020-01-17')
     },
     {
@@ -77,8 +75,7 @@ export class TestData {
       title: 'Уделить время семье',
       priority: TestData.priorities[2],
       completed: true,
-      category: TestData.categories[4],
-      date: new Date('2019-11-13')
+      category: TestData.categories[4]
     },
     {
       id: 8,
@@ -101,7 +98,6 @@ export class TestData {
       title: 'Посмотерть видео на youtube',
       priority: TestData.priorities[2],
       completed: false,
-      category: TestData.categories[2],
       date: new Date('2019-11-16')
     },
     {
