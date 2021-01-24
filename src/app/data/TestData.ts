@@ -1,6 +1,6 @@
-import { Category } from "../model/Category";
-import { Priority } from "../model/Priority";
-import { Task } from "../model/Task";
+import { Category } from '../model/Category';
+import { Priority } from '../model/Priority';
+import { Task } from '../model/Task';
 
 export class TestData {
   static categories: Category[] = [
@@ -112,5 +112,21 @@ export class TestData {
       category: TestData.categories[5],
       date: new Date('2019-11-11')
     },
-  ]
+    {
+      id: 12,
+      title: 'Покататься на велосипеде',
+      priority: TestData.priorities[4],
+      completed: true,
+      category: TestData.categories[7],
+      date: new Date('2019-11-11')
+    },
+    {
+      id: 13,
+      title: 'Сделать свой браузер',
+      priority: TestData.priorities[1],
+      completed: true,
+      category: TestData.categories[8],
+      date: new Date('2019-11-11')
+    }
+  ];
 }
