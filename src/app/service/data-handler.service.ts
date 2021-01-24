@@ -21,8 +21,12 @@ export class DataHandlerService {
   }
 
   fillTasksByCategory(category: Category): void {
-    this.tasksSubject.next(
-      TestData.tasks.filter(task => task.category === category)
-    );
+    if (category === TestData.categories[0]) {
+      this.tasksSubject.next(TestData.tasks);
+    } else {
+      this.tasksSubject.next(
+        TestData.tasks.filter(task => task.category === category)
+      );
+    }
   }
 }
