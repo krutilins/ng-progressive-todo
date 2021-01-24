@@ -12,17 +12,17 @@
         <th>Название</th>
         <th>Категория</th>
         <th>Приоритет</th>
-        <th>Статус</th>
         <th>Дата</th>
+        <th>Статус</th>
       </thead>
       <tbody>
-        <tr *ngFor="let task of tasks">
-          <td>{{ task.id }}</td>
+        <tr *ngFor="let task of tasks;index as id">
+          <td>{{ id + 1 }}</td>
           <td>{{ task.title }}</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>{{ task.category?.title || "Без категории" }}</td>
+          <td>{{ task.priority?.title || "Без приоритета" }}</td>
+          <td>{{ (task?.date | date) || "Без даты"}}</td>
+          <td>{{ task.completed }}</td>
         </tr>
       </tbody>
     </table>
