@@ -17,4 +17,8 @@ export class TaskListComponent implements OnInit {
     this.dataHandler.tasksSubject.subscribe(tasks => this.tasks = tasks);
   }
 
+  updateTaskStatus(id: number): void {
+    this.dataHandler.toggleStatus(id);
+  }
+
 }

@@ -29,4 +29,12 @@ export class DataHandlerService {
       );
     }
   }
+
+  toggleStatus(id: number): void {
+    TestData.tasks.forEach(task => {
+      if (task.id === id) {
+        task.completed = !task.completed;
+      }
+    });
+  }
 }
