@@ -21,6 +21,8 @@ export class StatComponent implements OnInit {
       const uncompletedTasks = tasks.length - completedTasks;
       this.tasksStatistics = new TaskStatistics(completedTasks, uncompletedTasks);
 
+      this.stats = [];
+
       this.stats.push({
         title: `${this.tasksStatistics.completedTasks} из ${this.tasksStatistics.tasksCount}`,
         icon: `done`,
@@ -34,13 +36,13 @@ export class StatComponent implements OnInit {
       });
 
       this.stats.push({
-        title: `${Math.round(this.tasksStatistics.completedTasks / this.tasksStatistics.tasksCount * 100)} %`,
+        title: `${Math.round(this.tasksStatistics.completedTasks / this.tasksStatistics.tasksCount * 100) || 0} %`,
         icon: `poll`,
         description: `Процент завершенных задач`
       });
 
       this.stats.push({
-        title: `${Math.round(this.tasksStatistics.uncompletedTasks / this.tasksStatistics.tasksCount * 100)} %`,
+        title: `${Math.round(this.tasksStatistics.uncompletedTasks / this.tasksStatistics.tasksCount * 100) || 0} %`,
         icon: `thumb_down_alt`,
         description: `Процент незавершенных задач`
       });

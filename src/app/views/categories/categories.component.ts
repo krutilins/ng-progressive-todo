@@ -8,6 +8,7 @@ import { DataHandlerService } from 'src/app/service/data-handler.service';
   styleUrls: ['./categories.component.scss']
 })
 export class CategoriesComponent implements OnInit {
+  typesOfShoes: string[] = ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'];
 
   categories: Category[];
   selectedCategory: Category;
