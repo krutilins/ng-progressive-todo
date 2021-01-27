@@ -1,3 +1,9 @@
-.nav-link {
-  cursor: pointer;
+
+.list-option:hover {
+  background-color: hsla(0,0%,78.4%,.2);
+  border-radius: 3px;
+}
+
+.list-option.active {
+  background-color: #9c27b0;
 }
