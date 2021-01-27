@@ -7,6 +7,7 @@ import { CategoriesComponent } from './views/categories/categories.component';
 import { TaskListComponent } from './views/task-list/task-list.component';
 import { StatComponent } from './views/stat/stat.component';
 import { StatCardComponent } from './views/stat-card/stat-card.component';
+import { NavbarComponent } from './views/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { StatCardComponent } from './views/stat-card/stat-card.component';
     CategoriesComponent,
     TaskListComponent,
     StatComponent,
-    StatCardComponent
+    StatCardComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
