@@ -1,11 +1,11 @@
 export class Stat {
   title: string;
   icon: string;
-  description: string;
+  subtitle: string;
 
   constructor(title: string, icon: string, description: string) {
     this.title = title;
     this.icon = icon;
-    this.description = description;
+    this.subtitle = description;
   }
 }

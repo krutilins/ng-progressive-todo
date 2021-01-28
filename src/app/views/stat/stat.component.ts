@@ -26,25 +26,25 @@ export class StatComponent implements OnInit {
       this.stats.push({
         title: `${this.tasksStatistics.completedTasks} из ${this.tasksStatistics.tasksCount}`,
         icon: `done`,
-        description: `Завершенные задачи`
+        subtitle: `Завершенные задачи`
       });
 
       this.stats.push({
         title: `${this.tasksStatistics.uncompletedTasks} из ${this.tasksStatistics.tasksCount}`,
         icon: `thumb_down_alt`,
-        description: `Незавершенные задачи`
+        subtitle: `Незавершенные задачи`
       });
 
       this.stats.push({
         title: `${Math.round(this.tasksStatistics.completedTasks / this.tasksStatistics.tasksCount * 100) || 0} %`,
         icon: `poll`,
-        description: `Процент завершенных задач`
+        subtitle: `Процент завершенных задач`
       });
 
       this.stats.push({
         title: `${Math.round(this.tasksStatistics.uncompletedTasks / this.tasksStatistics.tasksCount * 100) || 0} %`,
         icon: `thumb_down_alt`,
-        description: `Процент незавершенных задач`
+        subtitle: `Процент незавершенных задач`
       });
     });
   }

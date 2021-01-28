@@ -1,3 +1,15 @@
-<div class="row">
-  <app-stat-card *ngFor="let stat of stats" class="col-lg-3 col-md-6 col-sm-6" [stat]="stat"></app-stat-card>
+<div class="container">
+  <mat-card class="card" *ngFor="let stat of stats">
+    <mat-card-header class="card-header">
+      <div mat-card-avatar class="card-icon">
+        <i class="material-icons">{{ stat.icon }}</i>
+      </div>
+      <mat-card-title class="card-title">
+        {{ stat.title }}
+      </mat-card-title>
+      <mat-card-subtitle class="card-subtitle">
+        {{ stat.subtitle }}
+      </mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
 </div>
