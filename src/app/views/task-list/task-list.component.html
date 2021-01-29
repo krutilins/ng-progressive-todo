@@ -3,7 +3,7 @@
     <h4 class="container-title">Task List</h4>
     <p class="container-subtitle">Let's do great things today</p>
   </div>
-  <div class="cotinaer-body">
+  <div class="container-body">
     <table class="table">
       <thead class="table-head">
         <th>ID</th>
@@ -17,6 +17,7 @@
         <tr
           *ngFor="let task of tasks; index as id"
           [class.completed]="task.completed"
+          class="table-row"
         >
           <td>{{ id + 1 }}</td>
           <td>{{ task.title }}</td>
