@@ -9,13 +9,15 @@ import { TaskListComponent } from './views/task-list/task-list.component';
 import { StatComponent } from './views/stat/stat.component';
 import { NavbarComponent } from './views/navbar/navbar.component';
 import { MaterialModule } from './shared/material.module';
+import { TableComponent } from './views/table/table.component';
 @NgModule({
   declarations: [
     AppComponent,
     CategoriesComponent,
     TaskListComponent,
     StatComponent,
-    NavbarComponent
+    NavbarComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,

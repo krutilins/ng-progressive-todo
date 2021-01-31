@@ -3,32 +3,7 @@
     <app-categories></app-categories>
   </mat-drawer>
   <mat-drawer-content class="drawer-content">
-    <mat-toolbar class="toolbar" color="warn">
-      <button
-        mat-icon-button
-        class="icon-button"
-        aria-label="Icon-button with menu icon"
-        (click)="drawer.toggle()"
-      >
-        <mat-icon>menu</mat-icon>
-      </button>
-      <span>My App</span>
-      <span class="spacer"></span>
-      <button
-        mat-icon-button
-        class="icon-button favorite-icon"
-        aria-label="Icon-button with heart icon"
-      >
-        <mat-icon>favorite</mat-icon>
-      </button>
-      <button
-        mat-icon-button
-        class="icon-button"
-        aria-label="Icon-button with share icon"
-      >
-        <mat-icon>share</mat-icon>
-      </button>
-    </mat-toolbar>
+    <app-navbar (burgermenuClick)="drawer.toggle()"></app-navbar>
     <app-stat></app-stat>
     <app-task-list></app-task-list>
   </mat-drawer-content>
